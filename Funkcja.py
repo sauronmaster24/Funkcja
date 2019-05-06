@@ -7,11 +7,19 @@ from termcolor import colored
 init()
 #############################
 
+def parzysta(x):
+    if x % 2 == 0:
+        return "Prawda"
+    else:
+        return "Fałsz"
+
+
 def potega_lub_pierwiastek(x):
-    if x%2 == 0:
+    if parzysta(x) == "Prawda":
         return x**2
     else:
         return round(x ** 0.5,2)
+
 
 
 
